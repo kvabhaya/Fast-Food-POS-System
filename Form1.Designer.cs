@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             checkBox1 = new CheckBox();
@@ -89,6 +90,13 @@
             textBox23 = new TextBox();
             textBox24 = new TextBox();
             pictureBox13 = new PictureBox();
+            panel13 = new Panel();
+            textBox2 = new TextBox();
+            textBox25 = new TextBox();
+            panel14 = new Panel();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -114,6 +122,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            panel13.SuspendLayout();
+            panel14.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -171,7 +181,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.French_Fries;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(39, 41);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(103, 94);
@@ -215,13 +225,14 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(122, 27);
             textBox4.TabIndex = 1;
-            textBox4.Text = "French Fries";
+            textBox4.Text = "Burger";
             textBox4.TextAlign = HorizontalAlignment.Center;
             textBox4.UseWaitCursor = true;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.French_Fries;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(39, 41);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(103, 94);
@@ -265,13 +276,13 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(122, 27);
             textBox6.TabIndex = 1;
-            textBox6.Text = "French Fries";
+            textBox6.Text = "Pizza";
             textBox6.TextAlign = HorizontalAlignment.Center;
             textBox6.UseWaitCursor = true;
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.French_Fries;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(39, 41);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(103, 94);
@@ -315,13 +326,13 @@
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(122, 27);
             textBox8.TabIndex = 1;
-            textBox8.Text = "French Fries";
+            textBox8.Text = "Shawarma";
             textBox8.TextAlign = HorizontalAlignment.Center;
             textBox8.UseWaitCursor = true;
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.French_Fries;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(39, 41);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(103, 94);
@@ -365,13 +376,13 @@
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(122, 27);
             textBox10.TabIndex = 1;
-            textBox10.Text = "French Fries";
+            textBox10.Text = "Noodles";
             textBox10.TextAlign = HorizontalAlignment.Center;
             textBox10.UseWaitCursor = true;
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.French_Fries;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(39, 41);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(103, 94);
@@ -415,13 +426,14 @@
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(122, 27);
             textBox12.TabIndex = 1;
-            textBox12.Text = "French Fries";
+            textBox12.Text = "Pasta";
             textBox12.TextAlign = HorizontalAlignment.Center;
             textBox12.UseWaitCursor = true;
+            textBox12.TextChanged += textBox12_TextChanged;
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = Properties.Resources.French_Fries;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(39, 41);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(103, 94);
@@ -465,13 +477,13 @@
             textBox14.Name = "textBox14";
             textBox14.Size = new Size(122, 27);
             textBox14.TabIndex = 1;
-            textBox14.Text = "French Fries";
+            textBox14.Text = "Straw Shake";
             textBox14.TextAlign = HorizontalAlignment.Center;
             textBox14.UseWaitCursor = true;
             // 
             // pictureBox8
             // 
-            pictureBox8.Image = Properties.Resources.French_Fries;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
             pictureBox8.Location = new Point(39, 41);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(103, 94);
@@ -515,13 +527,13 @@
             textBox16.Name = "textBox16";
             textBox16.Size = new Size(122, 27);
             textBox16.TabIndex = 1;
-            textBox16.Text = "French Fries";
+            textBox16.Text = "Fanta";
             textBox16.TextAlign = HorizontalAlignment.Center;
             textBox16.UseWaitCursor = true;
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.French_Fries;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(39, 41);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(103, 94);
@@ -565,13 +577,13 @@
             textBox18.Name = "textBox18";
             textBox18.Size = new Size(122, 27);
             textBox18.TabIndex = 1;
-            textBox18.Text = "French Fries";
+            textBox18.Text = "Mint Shake";
             textBox18.TextAlign = HorizontalAlignment.Center;
             textBox18.UseWaitCursor = true;
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.French_Fries;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(39, 41);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(103, 94);
@@ -615,13 +627,13 @@
             textBox20.Name = "textBox20";
             textBox20.Size = new Size(122, 27);
             textBox20.TabIndex = 1;
-            textBox20.Text = "French Fries";
+            textBox20.Text = "Choco Shake";
             textBox20.TextAlign = HorizontalAlignment.Center;
             textBox20.UseWaitCursor = true;
             // 
             // pictureBox11
             // 
-            pictureBox11.Image = Properties.Resources.French_Fries;
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
             pictureBox11.Location = new Point(39, 41);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(103, 94);
@@ -665,13 +677,13 @@
             textBox22.Name = "textBox22";
             textBox22.Size = new Size(122, 27);
             textBox22.TabIndex = 1;
-            textBox22.Text = "French Fries";
+            textBox22.Text = "Sprite";
             textBox22.TextAlign = HorizontalAlignment.Center;
             textBox22.UseWaitCursor = true;
             // 
             // pictureBox12
             // 
-            pictureBox12.Image = Properties.Resources.French_Fries;
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
             pictureBox12.Location = new Point(39, 41);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(103, 94);
@@ -715,13 +727,13 @@
             textBox24.Name = "textBox24";
             textBox24.Size = new Size(122, 27);
             textBox24.TabIndex = 1;
-            textBox24.Text = "French Fries";
+            textBox24.Text = "CocaCola";
             textBox24.TextAlign = HorizontalAlignment.Center;
             textBox24.UseWaitCursor = true;
             // 
             // pictureBox13
             // 
-            pictureBox13.Image = Properties.Resources.French_Fries;
+            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
             pictureBox13.Location = new Point(39, 41);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(103, 94);
@@ -729,12 +741,83 @@
             pictureBox13.TabIndex = 0;
             pictureBox13.TabStop = false;
             // 
+            // panel13
+            // 
+            panel13.BackColor = Color.Gainsboro;
+            panel13.Controls.Add(button3);
+            panel13.Controls.Add(button2);
+            panel13.Controls.Add(button1);
+            panel13.Controls.Add(textBox2);
+            panel13.Location = new Point(150, 148);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(566, 603);
+            panel13.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(21, 15);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(520, 465);
+            textBox2.TabIndex = 0;
+            // 
+            // textBox25
+            // 
+            textBox25.Font = new Font("Showcard Gothic", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox25.Location = new Point(37, 20);
+            textBox25.Multiline = true;
+            textBox25.Name = "textBox25";
+            textBox25.Size = new Size(488, 61);
+            textBox25.TabIndex = 15;
+            textBox25.Text = "Olong's Food Corner\r\n";
+            textBox25.TextAlign = HorizontalAlignment.Center;
+            textBox25.TextChanged += textBox25_TextChanged;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(224, 224, 224);
+            panel14.Controls.Add(textBox25);
+            panel14.Location = new Point(150, 33);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(566, 100);
+            panel14.TabIndex = 15;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(21, 557);
+            button1.Name = "button1";
+            button1.Size = new Size(158, 39);
+            button1.TabIndex = 1;
+            button1.Text = "Reset";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(202, 557);
+            button2.Name = "button2";
+            button2.Size = new Size(158, 39);
+            button2.TabIndex = 2;
+            button2.Text = "Add";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(383, 557);
+            button3.Name = "button3";
+            button3.Size = new Size(158, 39);
+            button3.TabIndex = 3;
+            button3.Text = "Print";
+            button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 61, 98);
             ClientSize = new Size(1350, 784);
+            Controls.Add(panel14);
+            Controls.Add(panel13);
             Controls.Add(panel7);
             Controls.Add(panel4);
             Controls.Add(panel8);
@@ -788,6 +871,10 @@
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -854,5 +941,12 @@
         private TextBox textBox23;
         private TextBox textBox24;
         private PictureBox pictureBox13;
+        private Panel panel13;
+        private TextBox textBox2;
+        private TextBox textBox25;
+        private Panel panel14;
+        private Button button3;
+        private Button button2;
+        private Button button1;
     }
 }

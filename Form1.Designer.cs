@@ -91,12 +91,12 @@
             textBox24 = new TextBox();
             pictureBox13 = new PictureBox();
             panel13 = new Panel();
-            textBox2 = new TextBox();
+            printBtn = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            receiptTextbox = new TextBox();
             textBox25 = new TextBox();
             panel14 = new Panel();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -744,22 +744,52 @@
             // panel13
             // 
             panel13.BackColor = Color.Gainsboro;
-            panel13.Controls.Add(button3);
+            panel13.Controls.Add(printBtn);
             panel13.Controls.Add(button2);
             panel13.Controls.Add(button1);
-            panel13.Controls.Add(textBox2);
+            panel13.Controls.Add(receiptTextbox);
             panel13.Location = new Point(150, 148);
             panel13.Name = "panel13";
             panel13.Size = new Size(566, 603);
             panel13.TabIndex = 14;
             // 
-            // textBox2
+            // printBtn
             // 
-            textBox2.Location = new Point(21, 15);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(520, 465);
-            textBox2.TabIndex = 0;
+            printBtn.Location = new Point(383, 557);
+            printBtn.Name = "printBtn";
+            printBtn.Size = new Size(158, 39);
+            printBtn.TabIndex = 3;
+            printBtn.Text = "Print";
+            printBtn.UseVisualStyleBackColor = true;
+            printBtn.Click += printBtn_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(202, 557);
+            button2.Name = "button2";
+            button2.Size = new Size(158, 39);
+            button2.TabIndex = 2;
+            button2.Text = "Add";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(21, 557);
+            button1.Name = "button1";
+            button1.Size = new Size(158, 39);
+            button1.TabIndex = 1;
+            button1.Text = "Reset";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // receiptTextbox
+            // 
+            receiptTextbox.Location = new Point(21, 15);
+            receiptTextbox.Multiline = true;
+            receiptTextbox.Name = "receiptTextbox";
+            receiptTextbox.Size = new Size(520, 465);
+            receiptTextbox.TabIndex = 0;
+            receiptTextbox.TextChanged += textBox2_TextChanged;
             // 
             // textBox25
             // 
@@ -781,34 +811,6 @@
             panel14.Name = "panel14";
             panel14.Size = new Size(566, 100);
             panel14.TabIndex = 15;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(21, 557);
-            button1.Name = "button1";
-            button1.Size = new Size(158, 39);
-            button1.TabIndex = 1;
-            button1.Text = "Reset";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(202, 557);
-            button2.Name = "button2";
-            button2.Size = new Size(158, 39);
-            button2.TabIndex = 2;
-            button2.Text = "Add";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(383, 557);
-            button3.Name = "button3";
-            button3.Size = new Size(158, 39);
-            button3.TabIndex = 3;
-            button3.Text = "Print";
-            button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -942,10 +944,10 @@
         private TextBox textBox24;
         private PictureBox pictureBox13;
         private Panel panel13;
-        private TextBox textBox2;
+        private TextBox receiptTextbox;
         private TextBox textBox25;
         private Panel panel14;
-        private Button button3;
+        private Button printBtn;
         private Button button2;
         private Button button1;
     }
